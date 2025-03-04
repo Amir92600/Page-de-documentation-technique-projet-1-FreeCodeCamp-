@@ -1,0 +1,94 @@
+/* Réinitialisation des styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+}
+
+/* Styles de la barre de navigation */
+#navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  height: 100vh; /* Hauteur de la fenêtre */
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 8px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Styles du contenu principal */
+#main-doc {
+  margin-left: 220px; /* Espace pour la navbar */
+  padding: 20px;
+}
+
+/* Styles des sections principales */
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.main-section p {
+  margin-bottom: 10px;
+}
+
+.main-section code {
+  display: block;
+  background: #f4f4f4;
+  padding: 5px;
+  margin: 10px 0;
+  border-left: 3px solid #333;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main-section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Media Query pour adapter l'affichage sur petits écrans */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #main-doc {
+    margin-left: 0;
+  }
+}
