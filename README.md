@@ -36,3 +36,8 @@ Documentation-Technique/
 └── README.md # Ce fichier de documentation
 
 
+
+## Extrait vidéo
+https://github.com/user-attachments/assets/2284fdc8-97c7-4d8e-aab8-8deba6237c86
+
+
